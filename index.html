@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - My First Website Project</title>
+
+  <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Notes by Stefanie</title>
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+ <!-- Stage 0-->
+  <h1>Introduction: Overview of the Internet</h1>
+  <div class="concept">  
+    <h2>World Wide Web</h2>
+    <ul>
+      <li>HTML = Hyper Text Markup Language</li>
+      <li>browser &gt; internet &gt; server</li>
+      <li>http = main protocol to communicate with servers</li>
+      <li>server = computers that host the files that make up the web</li>
+      <li>internet = world’s largest computer network</li>
+      <li>browser = a program on the computer to display files found on web</li>
+    </ul>
+    <br>
+  </div>
+  <div class="concept">  
+    <h2>HTML</h2>
+    <p>A web page is a text document written in a language called HTML. Web browsers read these documents, and then interpret and display them.
+    </p>
+    <ul>
+      <li>text content = what you see</li>
+      <li>markup = what it looks like</li>
+      <li>references to other documents (videos, image,..)</li>
+    </ul>
+    <p>Coding happens when programmers write text in a language that a computer can understand. The computer can then follow the instructions the programmer wrote.</p> 
+    <br>
+  </div>
+<h1>Chapter 1: Introduction to HTML</h1>
+  <div class="concept" >
+    <p>HTML is a markup language for describing web documents (web pages). It stands for Hyper Text Markup Language. A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different document content. An HTML tag is always contained within angled brackets. Most tags have an opening tag (&lt;p&gt; for example) and a closing tag, (&lt;/p&gt;). An HTML element refers to everything within a set of opening and closing tags. There is also the term "attriute". This is a property of an HTML element. For example, to set the href attribute of an anchor tag to the Udacity URL, you would write &lt;a href="www.udacity.com"&gt;
+    </p>
+    <h3>HTML examples</h3> 
+    <ul>
+      <li>&lt;b&gt; = <b>bold</b></li>
+      <li>&lt;em&gt; = <em>emphasis/italic</em></li>  
+      <li>&lt;a href = "..."&gt; = link f.ex. <a href="http://img.izismile.com/img/img5/20120716/640/do_the_derp_640_34.jpg">this is derp</a></li>
+     </ul>
+     <p>There are different kind of html elements. Usually each html starting tag also has an end tag. But sometimes tags don't need to be closed. These kind of tags are called <b>void tags</b>. Void elements are a special kind of elements that must not have content.
+     </p>
+    <h3>Void elements</h3>
+       <ul>
+         <li>&lt;br&gt; = line break</li>
+         <li>&lt;img src="url" alt="text"&gt; = adding an image to the text
+         </li>
+        </ul>
+
+      <p> Other kind of html elements are defined as block level elements or inline elements. Block level elements create invisible boxes that shift to a new line (f.ex. h1, p, ul, div, form). Inline elements are normally displayed without line breaks (f.ex. br, a, img, span). 
+      The actual html content goes into the &lt;body&gt;-section. CSS Java Script (Cascading Style Sheets) allows you to specify things such as appaerance and we will learn it later in this course.
+      </p>
+      <br>
+  </div>
+<!-- Stage 0--> 
+  <h1>Chapter 2: Creating a Structured Document with HTML</h1>
+  <div class="concept">  
+    <h2>Purposes of HTML, CSS and Javascript</h2>
+    <p>A website is like a house. Html is its structure, its architect’s plan. CSS are then the style – colors, decoration and so on. Java Script files are interactive components like the electric garage door.<br> 
+    We also learn that not all elements of the source code are visible on the website but for sure all elements are ordered in rectangular boxes.  The structure of all websites containing these boxed elements is tree-like.
+    </p>
+    <h3>Bullet points</h3>
+    <ul>
+      <li>HTML and CSS are both <em>languages</em></li>
+      <li>  HTML controls the <em>structure</em> of a web page</li>
+      <li>  CSS controls the <em>style</em> of a page (how it looks)</li>
+      <li>  When programmers talk about the <em>DOM</em> (Document Object Model) they are talking about the tree-like structure of a page</li>
+    </ul>
+    <p>An element starts and ends with a tag. In its middle there can be content. This content can be text or another tag. Each tag can have attributes with values. CSS defines the style, meaning how elements look on the page. Every element is a box but with CSS you can change the form elements are displayed on the page. However, you can break down any webpage to their boxes. Boxes can be summarized with div-tags. Within these div-tags attributes can be determined that give the box a name.
+    </p>  
+    <h3>Tools</h3>
+      <ul>
+        <li>  <b>Sublime</b> = <a href="http://www.sublimetext.com/2"> text editing program</a>; difficult in the beginning but has all the languages</li>
+        <li>  <b>Scratchpad</b> = for small projects; beginner-friendly; immediate speed of feedback</li>
+        <li>  <b>Codepen</b> = fewer beginner friendly features;  3 languages (HTML, CSS, Javascript), easy to share</li>
+       </ul>
+     <br>
+   </div>
+<h1>Chapter 3: Webpages, Documents, and Structure </h1>
+  <div class="concept">  
+    <h2>Adding CSS Style to HTML Structure</h2>
+    <p>You can have several CSS (<em>Cascading Style Sheets</em>) files or sheets that will be referenced in HTML and all of them will be used to find out the final and visible style for the page. CSS is code written to control the "style" of HTML elements. Cascading means keep on going down with the rules and see which ones apply (priority rules). That idea is known as <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">inheritance</a> and understanding it requires abstract thinking.<br> 
+    In CSS you start with what is called a <a href="https://css-tricks.com/how-css-selectors-work/">selector</a>. It defines to what elements of a page a particular style applies to. A particular style can be expressed through a rule. A rule set consists of a selector followed by a declaration block. A declaration is made up of a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">property</a> name and a value, separated by a colon; whitespace characters can appear around any of these elements {property: value}. If we want to apply a style to a bunch of grouped up html elements, we can use class selectors.
+    </p>
+    <h3> Avoiding repetition </h3>
+    <p> Avoiding repetition is essential. <!--- from Andy's notes --->When programmers don't avoid repetition, they will often have to do the same thing over and over. <br> This may mean copy and pasting certain style attributes into many HTML elements or rewriting the same code (sometimes with minor differences) many times. <br> This can lead to errors when the programmer decides to make a change to something. <br> If they don't dilligently make that same change everywhere the repeated code appears, problems will arise.
+    </p>  
+    <br>
+      <div class="extra" >
+        <b>Extra:</b>
+        <ul>
+          <li>In HTML, code comments begin with &lt;!-- and end with --&gt;. Everything in between is ignored.
+          <li>  In CSS, code comments begin with /* and end with *</li>
+        </ul>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>
+
+</body>
+
+</html>
